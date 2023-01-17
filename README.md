@@ -2,7 +2,7 @@
 
 ### Getting Started with this Repository 
 A Descriptive Analysis of multiple factors that may contribute to a movie's success in order apply those success factors to future movies the Microsoft will produce.
-To Run this code, download the following data files from the link below and place both files in the folder named "/Data" (case-sensitive) inside this repository.
+To Run this code, download the following data files from the link below and place both files in a folder you will create named "/Data" (case-sensitive) inside this repository.
 
 Download: tn.movie_budgets.csv.gz and im.db.zip From: https://github.com/LayFish21/dsc-phase-1-project-v2-4/tree/master/zippedData
     
