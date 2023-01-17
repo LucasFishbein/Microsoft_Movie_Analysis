@@ -133,7 +133,7 @@ For additional info, contact Lucas Fishbein at [FishbeinLucas@gmail.com](mailto:
 ## Repository Structure
 
 ```
-├── Data
+├── .gitignore
 ├── README.md
 ├── Microsoft_Movie_Analysis.pdf
 └── Microsoft_Movie_Analysis.ipynb
