@@ -40,7 +40,7 @@ The genre of a movie tends to be the first descriptive piece used when describin
 
 ##### Month Released
 
-The movie viewing habits of the global population my change throughout the calendar year for a myriad of factors. This analysis compares the release month of movies with high levels of success with that of the larger database to determine what percentage of movies released in a given month reach high levels of success to therefore provide Microsoft with a recommendation on the time of year their movies should be released to maximize success likelihood. 
+The movie viewing habits of the global population may change throughout the calendar year for a myriad of factors. This analysis compares the release month of movies with high levels of success with that of the larger database to determine what percentage of movies released in a given month reach high levels of success to therefore provide Microsoft with a recommendation on the time of year their movies should be released to maximize success likelihood. 
 
 ##### Production Budget
 
