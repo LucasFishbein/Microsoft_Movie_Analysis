@@ -2,7 +2,7 @@
 
 ### Getting Started with this Repository 
 A Descriptive Analysis of multiple factors that may contribute to a movie's success in order apply those success factors to future movies the Microsoft will produce.
-To Run this code, download the following data files from the link below and place both fiies in the folder named "/Data" (case-sensitive) inside this repository.
+To Run this code, download the following data files from the link below and place both files in the folder named "/Data" (case-sensitive) inside this repository.
 
 Download: tn.movie_budgets.csv.gz and im.db.zip From: https://github.com/LayFish21/dsc-phase-1-project-v2-4/tree/master/zippedData
     
@@ -11,7 +11,7 @@ Download: tn.movie_budgets.csv.gz and im.db.zip From: https://github.com/LayFish
 # Project Overview 
 ### Project Objective
 
-Microsoft is plannning to break into the movie delevepment space via  the formulation of their own proprietary movie studio. Microsoft, like most movie companies, is looking to maximize their success at the box office from the get-go. 
+Microsoft is planning to break into the movie development space via  the formulation of their own proprietary movie studio. Microsoft, like most movie companies, is looking to maximize their success at the box office from the get-go. 
 
 In order to maximize this likely-hood of success, an analysis of the top performing movies since 2010 has been completed in order to attempt to distill a few of the factors that have contributed to their success, allowing Microsoft to use this as a framework on which to develop their own movies and hopefully mimic the success.
 ### Analysis Overview
@@ -22,13 +22,13 @@ In order to obtain the relevant data to determine the success and the factors th
 
 The first data source was a IMDB database (IMDB.com) which contains basic information regarding 146,144 different movie titles that have been released since 2010. This database contains descriptive factors of movies such as their release data and genres as well as info on the cast and creators of said movie. This will provide our analysis with a number of different movie factors to choose from when determining why a movie may have been successful.
 
-The second data source quiered was from the_numbers.com, a company that logs financial information regarding movies, such as the gross income and production budget. This database, though much smaller than the IMDB database, as it only contains 5,872 movies in total and 2,194 titles from 2010 and beyond, has extremely important production budget finicial information included that is a key piece of how we will determine the success of a movie.
+The second data source queried was from the_numbers.com, a company that logs financial information regarding movies, such as the gross income and production budget. This database, though much smaller than the IMDB database, as it only contains 5,872 movies in total and 2,194 titles from 2010 and beyond, has extremely important production budget financial information included that is a key piece of how we will determine the success of a movie.
 
 When combining these two databases in order to form a new, complete database only of movies that contained all of the relevant information outlined below we end up with a sample size of 1,859. The limitations regarding this dataset are covered in depth later in this analysis. 
 
 ## Determining the "Success" of a Movie
 
-Microsoft like most companies is likely looking to maximize their profits while minimizing their investments, therefore the success metric used within this analysis to determine a movie's success will be the Return on Investment or ROI. ROI acts as a gauge of an investment's profitability, so a higher ROI means a that greater profitabilty in relation to the initail investment. For this analysis the investment metric will be the production budget of a movie and a movie's profitabilty will be determined via its worldwide gross income. The movies with an ROI greater than or equal to 500% will be considered "Highly Successful" and will be included in the Top Movies analyses 
+Microsoft like most companies is likely looking to maximize their profits while minimizing their investments, therefore the success metric used within this analysis to determine a movie's success will be the Return on Investment or ROI. ROI acts as a gauge of an investment's profitability, so a higher ROI means a that greater profitability in relation to the initial investment. For this analysis the investment metric will be the production budget of a movie and a movie's profitability will be determined via its worldwide gross income. The movies with an ROI greater than or equal to 500% will be considered "Highly Successful" and will be included in the Top Movies analyses 
 
 ## Factors explored that may have contributed to a Movie's success
 
@@ -40,7 +40,7 @@ The genre of a movie tends to be the first descriptive piece used when describin
 
 ##### Month Released
 
-The movie viewing habits of the global population my change throughout the calendar year for a myriad of factors. This analysis compares the release month of movies with high levels of success with that of the larger database to determine what percentage of movies released in a given month reach high levels of success to therefore provide Microsoft with a recomendation on the time of year their movies should be released to maximize success liklihood. 
+The movie viewing habits of the global population my change throughout the calendar year for a myriad of factors. This analysis compares the release month of movies with high levels of success with that of the larger database to determine what percentage of movies released in a given month reach high levels of success to therefore provide Microsoft with a recommendation on the time of year their movies should be released to maximize success likelihood. 
 
 ##### Production Budget
 
@@ -67,10 +67,10 @@ As discussed above ROI will be our success metric with "high success" being an R
 
 ROI will be derived from the worldwide gross income and production cost being sourced from the tn_budgets
 
-### General forumla to calculate ROI:
+### General formula to calculate ROI:
 
 $$
-ROI = \frac{\text{Net Income}}{\text{Cost of Invetment}} * 100
+ROI = \frac{\text{Net Income}}{\text{Cost of Investment}} * 100
 $$
 
 ### Formula to calculate a Movie's ROI:
@@ -112,16 +112,16 @@ Release Month:
 
 # Next Steps
 
-### The next steps to further investigate the task at hand is to address the limitions of this study in the following ways
+### The next steps to further investigate the task at hand is to address the limitations of this study in the following ways
 **Data sources and database Size:** 
-- Find a much larger database to use as the dataset for this analysis as 1859 movies may not be large enough to get reproducable results
-- Be sure to fully understand how a database was formed and what the inclusion criterea for the database is
+- Find a much larger database to use as the dataset for this analysis as 1859 movies may not be large enough to get reproducible results
+- Be sure to fully understand how a database was formed and what the inclusion criteria for the database is
 
 **Form a more complete picture of a movie's investment for ROI calculation:** 
-- Find a database that includes other investment costs associated with a movie success such as the advertising budget and intellectual property liscensing fees
+- Find a database that includes other investment costs associated with a movie success such as the advertising budget and intellectual property licensing fees
 
 **For a more complete picture of a movie's gross income for ROI calculation:**
-- Find a database that includes other income sources beyond just the box office worldwide gross associated with a movie's income such as merchandise sales, intellectual property liscensing fees, and post movie thearter sales
+- Find a database that includes other income sources beyond just the box office worldwide gross associated with a movie's income such as merchandise sales, intellectual property licensing fees, and post movie theater sales
 
 ## For More Information
 
@@ -136,5 +136,5 @@ For additional info, contact Lucas Fishbein at [FishbeinLucas@gmail.com](mailto:
 ├── Data
 ├── README.md
 ├── Microsoft_Movie_Analysis.pdf
-└── Microsoft_Movie_Analysis.pdfipynb
+└── Microsoft_Movie_Analysis.ipynb
 ```
