@@ -70,13 +70,17 @@ $$
 
 ## Production Budget Analysis
 
+<img width="571" alt="Screenshot 2023-01-15 at 1 28 34 PM" src="https://user-images.githubusercontent.com/117129342/212971053-46cb47fb-ca7a-4cef-a8f6-f2838b29efd0.png">
+
 
 ## Release Month Analysis
 ### Creating Bar Graph to show the month of release used the most for Top Movies in our dataset
 In order to determine which month Microsoft should release its new movies we will look for release month trends within the movies in the present dataset with an ROI >= 500%
 
+<img width="473" alt="Screenshot 2023-01-15 at 1 28 49 PM" src="https://user-images.githubusercontent.com/117129342/212971592-17b54743-175c-4f8c-9071-af8e3708bd43.png">
 
 
 ## Genre Analysis
 
+<img width="473" alt="Screenshot 2023-01-15 at 1 28 41 PM" src="https://user-images.githubusercontent.com/117129342/212971604-0711dc28-6a23-4c1b-a1c2-389378d943b9.png">
 
