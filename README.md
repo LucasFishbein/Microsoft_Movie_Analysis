@@ -9,48 +9,76 @@ Download: tn.movie_budgets.csv.gz and im.db.zip From: https://github.com/LayFish
 
 
 # Project Overview 
+
 ### Project Objective
 
 Microsoft is planning to break into the movie development space via  the formulation of their own proprietary movie studio. Microsoft, like most movie companies, is looking to maximize their success at the box office from the get-go. 
 
 In order to maximize this likely-hood of success, an analysis of the top performing movies since 2010 has been completed in order to attempt to distill a few of the factors that have contributed to their success, allowing Microsoft to use this as a framework on which to develop their own movies and hopefully mimic the success.
+
 ### Analysis Overview
 
 In order to obtain the relevant data to determine the success and the factors that may have contributed to that success for movies that have been released post 2010 from two major movie databases were queried. 
 
 ## Data Sources
 
-The first data source was a IMDB database (IMDB.com) which contains basic information regarding 146,144 different movie titles that have been released since 2010. This database contains descriptive factors of movies such as their release data and genres as well as info on the cast and creators of said movie. This will provide our analysis with a number of different movie factors to choose from when determining why a movie may have been successful.
+The first data source was a IMDB database (IMDB.com) which contains basic information regarding 146,144 different movie titles that have been released since 2010. This database contains descriptive factors of movies such as their release data and genres as well as info on the cast and creators of said movie.
 
-The second data source queried was from the_numbers.com, a company that logs financial information regarding movies, such as the gross income and production budget. This database, though much smaller than the IMDB database, as it only contains 5,872 movies in total and 2,194 titles from 2010 and beyond, has extremely important production budget financial information included that is a key piece of how we will determine the success of a movie.
+The second data source queried was from the_numbers.com, a company that logs financial information regarding movies, such as the gross income and production budget. This database contains 2,194 titles from 2010 and beyond, has extremely important production budget financial information included that is a key piece of how we will determine the success of a movie.
 
-When combining these two databases in order to form a new, complete database only of movies that contained all of the relevant information outlined below we end up with a sample size of 1,859. The limitations regarding this dataset are covered in depth later in this analysis. 
+When combining these two databases in order to form a new complete database only of movies released after 2009 that contained all of the relevant information outlined below, we end up with a sample size of 1,859. The limitations regarding this dataset are covered in depth later in this analysis. 
 
 ## Determining the "Success" of a Movie
 
-Microsoft like most companies is likely looking to maximize their profits while minimizing their investments, therefore the success metric used within this analysis to determine a movie's success will be the Return on Investment or ROI. ROI acts as a gauge of an investment's profitability, so a higher ROI means a that greater profitability in relation to the initial investment. For this analysis the investment metric will be the production budget of a movie and a movie's profitability will be determined via its worldwide gross income. The movies with an ROI greater than or equal to 500% will be considered "Highly Successful" and will be included in the Top Movies analyses 
+In order to maximize profits while minimizing investments, the success metric used within this analysis to determine a movie's success will be the Return on Investment or ROI. ROI acts as a gauge of an investment's profitability, so a higher ROI means a that greater profitability in relation to the initial investment. For this analysis the investment metric will be the production budget of a movie and a movie's profitability will be determined via its worldwide gross income. 
 
-## Factors explored that may have contributed to a Movie's success
+The movies with an ROI greater than or equal to 500% will be considered "Highly Successful" and will be included in the Top Movies dataset. 
 
+## Data Analysis
+
+### Calculating the Return on Investment (ROI) 
+
+As discussed above ROI will be our success metric with "high success" being an ROI >= 500%
+
+ROI will be derived from the worldwide gross income and production cost being sourced from the tn_budgets
+
+#### General formula to calculate ROI:
+
+$$
+ROI = \frac{\text{Net Income}}{\text{Cost of Investment}} * 100
+$$
+
+#### Formula to calculate a Movie's ROI:
+$$
+ROI = \frac{\text{Worldwide Gross Income}}{\text{Production Budget}} * 100
+$$
 The culture surrounding movies is constantly in flux and has changed significantly over the past 100 years since their gain in popularity in the early 20th century. For this reason, this analysis focuses only on movies that were released after 2010, as it may be likely that the factors that contributed to the success movies released prior to that are no longer relevant in the modern world.
 
 ##### Genre
 
-The genre of a movie tends to be the first descriptive piece used when describing a movie beyond it's title. People also tend to describe the types of movies that they enjoy most by their genre, therefore it is very possible that people choose what movies to see largely based on the genre. This analysis uses ROI and genre to find out what percentage of movies in each genre end up with a high level of success so we can therefore guide microsoft on which genres they should focus on.
+This analysis uses ROI and genre to find out what percentage of movies in each genre end up with a high level of success so we can therefore guide microsoft on which genres they should focus on.
+
+<img width="473" alt="Screenshot 2023-01-23 at 2 30 06 PM" src="https://user-images.githubusercontent.com/117129342/214132602-94760c96-4183-455c-96fa-70d04d6c7647.png">
 
 ##### Month Released
 
-The movie viewing habits of the global population may change throughout the calendar year for a myriad of factors. This analysis compares the release month of movies with high levels of success with that of the larger database to determine what percentage of movies released in a given month reach high levels of success to therefore provide Microsoft with a recommendation on the time of year their movies should be released to maximize success likelihood. 
+This analysis compares the release month of movies with high levels of success with that of the larger database to determine what percentage of movies released in a given month reach high levels of success in order to understand which release month is most likely to maximize success. 
+
+<img width="427" alt="Screenshot 2023-01-23 at 2 29 58 PM" src="https://user-images.githubusercontent.com/117129342/214132612-ebba2ddd-85c0-4b14-9388-1c6f37bd7a2c.png">
 
 ##### Production Budget
 
-The production budget or, original investment into a movie is another very important factor in the early steps of movie development as this will guide many, if not almost all of the factors of a movie moving forward. In order to determine what Microsoft initial investment should be to maximize ROI, an analysis of different ranges of production budgets vs their success at each level was completed to give microsoft an idea of how much they should budget for each movie to maximize ROI.
+In order to determine what Microsoft's initial investment should be to maximize ROI, an analysis of different ranges of production budgets vs their rate of success at each level was completed to give Microsoft an idea of how much they should budget for each movie to maximize ROI.
+
+The graph below breaks the production budgets into multiple bins as described on the x-axis and shows the percent of movies in our database at that budget point that became highly successful
+
+<img width="617" alt="Screenshot 2023-01-23 at 2 32 28 PM" src="https://user-images.githubusercontent.com/117129342/214132577-b68651ba-08cf-44f0-84e0-45d4346bb517.png">
+
 
 ## Project Limitations
 
 
 - Did not fully understand the origins of the databases. How movies were selected for inclusion? Is the info accurate?
-
 - A much larger dataset could be built beyond the limitations of the provided datasets.
 - This analysis does not actual measure the how any of these factors impact the results as it is only a descriptive analysis
 - It is possible that two movies with the same name came out in the same year
@@ -59,41 +87,6 @@ The production budget or, original investment into a movie is another very impor
 - Investment portion of ROI does not include all factors of interest such as advertising budget
 - Worldwide Gross does not contain factors such as merchandise and other peripheral sales
 
-# Data Analysis 
-
-## Calculating the Return on Investment (ROI) 
-
-As discussed above ROI will be our success metric with "high success" being an ROI >= 500%
-
-ROI will be derived from the worldwide gross income and production cost being sourced from the tn_budgets
-
-### General formula to calculate ROI:
-
-$$
-ROI = \frac{\text{Net Income}}{\text{Cost of Investment}} * 100
-$$
-
-### Formula to calculate a Movie's ROI:
-$$
-ROI = \frac{\text{Worldwide Gross Income}}{\text{Production Budget}} * 100
-$$
-
-## Production Budget Analysis
-The graph below breaks the production budgets into multiple bins as described on the x-axis and shows the percent of movies in our database at that budget point that became highly successful
-
-<img width="571" alt="Screenshot 2023-01-15 at 1 28 34 PM" src="https://user-images.githubusercontent.com/117129342/212971053-46cb47fb-ca7a-4cef-a8f6-f2838b29efd0.png">
-
-
-## Release Month Analysis
-The graph below examines at the release month of each movie in our dataset and shows the percent of movies in our database released in a given month that became highly successful
-
-<img width="473" alt="Screenshot 2023-01-15 at 1 28 49 PM" src="https://user-images.githubusercontent.com/117129342/212971592-17b54743-175c-4f8c-9071-af8e3708bd43.png">
-
-
-## Genre Analysis
-The graph below examines at the genre of each movie in our dataset and shows the percent of movies in our database of a given genre that became highly successful
-
-<img width="473" alt="Screenshot 2023-01-15 at 1 28 41 PM" src="https://user-images.githubusercontent.com/117129342/212971604-0711dc28-6a23-4c1b-a1c2-389378d943b9.png">
 
 # Conclusions 
 
