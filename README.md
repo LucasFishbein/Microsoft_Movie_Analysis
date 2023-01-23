@@ -56,19 +56,19 @@ $$
 
 The culture surrounding movies is constantly in flux and has changed significantly over the past 100 years since their gain in popularity in the early 20th century. For this reason, this analysis focuses only on movies that were released after 2010, as it may be likely that the factors that contributed to the success movies released prior to that are no longer relevant in the modern world.
 
-##### Genre
+### Genre
 
 This analysis uses ROI and genre to find out what percentage of movies in each genre end up with a high level of success so we can therefore guide microsoft on which genres they should focus on.
 
 <img width="473" alt="Screenshot 2023-01-23 at 2 30 06 PM" src="https://user-images.githubusercontent.com/117129342/214132602-94760c96-4183-455c-96fa-70d04d6c7647.png">
 
-##### Month Released
+### Month Released
 
 This analysis compares the release month of movies with high levels of success with that of the larger database to determine what percentage of movies released in a given month reach high levels of success in order to understand which release month is most likely to maximize success. 
 
 <img width="427" alt="Screenshot 2023-01-23 at 2 29 58 PM" src="https://user-images.githubusercontent.com/117129342/214132612-ebba2ddd-85c0-4b14-9388-1c6f37bd7a2c.png">
 
-##### Production Budget
+### Production Budget
 
 In order to determine what Microsoft's initial investment should be to maximize ROI, an analysis of different ranges of production budgets vs their rate of success at each level was completed to give Microsoft an idea of how much they should budget for each movie to maximize ROI.
 
