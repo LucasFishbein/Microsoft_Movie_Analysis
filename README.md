@@ -49,9 +49,11 @@ ROI = \frac{\text{Net Income}}{\text{Cost of Investment}} * 100
 $$
 
 #### Formula to calculate a Movie's ROI:
+
 $$
 ROI = \frac{\text{Worldwide Gross Income}}{\text{Production Budget}} * 100
 $$
+
 The culture surrounding movies is constantly in flux and has changed significantly over the past 100 years since their gain in popularity in the early 20th century. For this reason, this analysis focuses only on movies that were released after 2010, as it may be likely that the factors that contributed to the success movies released prior to that are no longer relevant in the modern world.
 
 ##### Genre
